@@ -1,0 +1,8 @@
+h2, h1, footer { text-align: center; }
+html, body, .container { height: 100vh; }
+div.buttonStyles { text-align: center; }
+button#submitBtn { margin-top: 10px; }
+div.input-group { padding-bottom: 10px; }
+div.both-inputs { padding-left: 25px; padding-right: 25px; }
+div.row.content { margin-top: 100px;}
+span.glyphicon.glyphicon-list-alt { padding-right: 7px; }
