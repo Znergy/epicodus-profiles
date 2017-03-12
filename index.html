@@ -20,26 +20,30 @@
   </head>
   <body>
     <div class="container">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h2>Questionnaire</h2>
-        </div>
-        <div class="panel-body">
-          <form class="loginForm">
-            <div class="input-group">
-              <label>What is your business name?</label>
-              <input class="form-control" id="businessName" placeholder="Bob's Burgers" type="text" />
+      <div class="row content">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h2>Log In</h2>
             </div>
-            <div class="input-group">
-              <label>What makes you different?</label>
-              <input class="form-control" id="mainHeader" placeholder="We make the complex simple." type="text" />
+            <div class="panel-body">
+              <form class="loginForm">
+                <div class="both-inputs">
+                  <div class="input-group">
+                    <span class="input-group-addon">Username</span><input class="form-control" name="username" id="usernameInput" type="text" required="">
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-addon">Password</span><input class="form-control" name="password" id="password" type="password" required="">
+                  </div>
+                </div>
+                <div class="buttonStyles">
+                  <button class="btn btn-primary" type="submit" id="submitBtn">
+                    <span class="glyphicon glyphicon-list-alt"></span>Log In
+                  </button>
+                </div>
+              </form>
             </div>
-            <div class="buttonStyles">
-              <button class="btn btn-primary" type="button" id="submitBtn">
-                  <span class="glyphicon glyphicon-list-alt iconStyle"></span>Log In
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
