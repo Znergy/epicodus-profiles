@@ -1,5 +1,5 @@
 h2, h1, footer { text-align: center; }
-html, body, .container { height: 100vh; }
+html, body, .container { height: 100vh; color: #333; }
 div.buttonStyles { text-align: center; }
 button#submitBtn { margin-top: 10px; }
 div.input-group { padding-bottom: 10px; }
