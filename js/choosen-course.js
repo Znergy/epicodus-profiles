@@ -3,11 +3,12 @@ $(function() {
     $("#courseTitle").text("JAVA");
     setBlankImages();
     setNames("blank");
+    
     // when a photo-block is clicked 
     $(".photo-block").on('click', function() {
-      // going to pass student clicked somehow then use that student + i in the url
-      // to show the correct student profile in individual.html
-      window.location.replace("individual.html?pageid=java&student=student");
+      var profileValue = $(this).attr("id");
+      console.log(profileValue);
+      window.location.replace("individual.html?pageid=java&profile=" + profileValue);
   });
 //    setImages("java"); // how to set all images
   } else if (window.location.href.includes("ruby")) {
@@ -69,7 +70,6 @@ function setNames(name) {
   
   console.log(arrayTemp);
   console.log(arrayTemp.length);
-  debugger;
   
   // only grabbing the array value at index 2..
   // ignoring the break statement in our for loop
