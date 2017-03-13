@@ -6,3 +6,4 @@ div.input-group { padding-bottom: 10px; }
 div.both-inputs { padding-left: 25px; padding-right: 25px; }
 div.row.content { margin-top: 100px;}
 span.glyphicon.glyphicon-list-alt { padding-right: 7px; }
+.error { border: 1px solid red; } .success { border: 1px solid green; }
