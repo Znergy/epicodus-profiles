@@ -8,28 +8,52 @@ $(function() {
     $(".photo-block").on('click', function() {
       var profileValue = $(this).attr("id");
       console.log(profileValue);
-      window.location.replace("individual.html?pageid=java&profile=" + profileValue);
+      document.location.href = "individual.html?pageid=java&profile=" + profileValue, true;
   });
 //    setImages("java"); // how to set all images
   } else if (window.location.href.includes("ruby")) {
     $("#courseTitle").text("RUBY");
     setBlankImages();
     setNames("blank");
+    
+    $(".photo-block").on('click', function() {
+      var profileValue = $(this).attr("id");
+      console.log(profileValue);
+      document.location.href = "individual.html?pageid=ruby&profile=" + profileValue, true;
+    });
     //    setImages("ruby"); // how to set all images
   } else if (window.location.href.includes("design")) {
     $("#courseTitle").text("DESIGN");
     setBlankImages();
     setNames("blank");
+    
+    $(".photo-block").on('click', function() {
+      var profileValue = $(this).attr("id");
+      console.log(profileValue);
+      document.location.href = "individual.html?pageid=design&profile=" + profileValue, true;
+    });
     //    setImages("design"); // how to set all images
   } else if (window.location.href.includes("csharp")) {
     $("#courseTitle").text("C#/.NET");
     setBlankImages();
     setNames("blank");
+    
+    $(".photo-block").on('click', function() {
+      var profileValue = $(this).attr("id");
+      console.log(profileValue);
+      document.location.href = "individual.html?pageid=csharp&profile=" + profileValue, true;
+    });
     //    setImages("csharp"); // how to set all images
   } else if (window.location.href.includes("php")) {
     $("#courseTitle").text("PHP");
     setBlankImages();
     setNames("blank");
+    
+    $(".photo-block").on('click', function() {
+      var profileValue = $(this).attr("id");
+      console.log(profileValue);
+      document.location.href = "individual.html?pageid=php&profile=" + profileValue, true;
+    });
     //    setImages("php"); // how to set all images
   } else {
     $("#courseTitle").text("ERROR: PAGE NOT FOUND");

@@ -1,17 +1,17 @@
 $(function() {
   $("#rubyCourse").on('click', function() {
-    window.location.replace("choosen-course.html?course=ruby");
+    document.location.href = "choosen-course.html?course=ruby", true;
   });
   $("#javaCourse").on('click', function() {
-    window.location.replace("choosen-course.html?course=java");
+    document.location.href = "choosen-course.html?course=java", true;
   });
   $("#cSharpCourse").on('click', function() {
-    window.location.replace("choosen-course.html?course=csharp");
+    document.location.href = "choosen-course.html?course=csharp", true;
   });
   $("#phpCourse").on('click', function() {
-    window.location.replace("choosen-course.html?pageid=php");
+    document.location.href = "choosen-course.html?pageid=php", true;
   });
   $("#designCourse").on('click', function() {
-    window.location.replace("choosen-course.html?pageid=design");
+    document.location.href = "choosen-course.html?pageid=design", true;
   });
 });

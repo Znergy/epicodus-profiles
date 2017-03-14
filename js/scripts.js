@@ -20,7 +20,7 @@ $(function() {
       hasSuccess(1);
       hasSuccess(2);
       setTimeout(function() {
-        window.location.replace("courses.html");
+        document.location.href = "courses.html", true;
       }, 2000);
     }
   });
