@@ -7,7 +7,7 @@
 
 ## Description
 
-A web application for students from all tracks to connect and learn about one another. On my first day of class I was surrounded by thirty-five strangers. I didn't know anyone's name or background and it took multiple weeks to build enough rapport to learn how amazing my fellow class mates are. Epicodus profiles, breaks down a layer of anxiety and helps us all get to know each other much faster, in a non intense environment.
+A web application for students from all tracks to connect and learn about one another. On my first day of class I was surrounded by thirty-five strangers. I didn't know anyone's name or background and it took multiple weeks to build enough rapport to learn how amazing my fellow class mates are. At the end of the day, Epicodus profiles is intended to break down a layer of anxiety and help us all get to know each other much faster.
 
 ## Support and contact details
 
