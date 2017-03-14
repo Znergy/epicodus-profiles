@@ -1,13 +1,19 @@
 h2, h3, h4, h5, h6, h1 { text-align: center; font-family: 'Roboto', cursive;  }
+h1:first-child { font-size: 65px; }
+.well:last-child { margin-bottom: 0px; padding: 30px;}
+footer:last-child { color: darkgrey; text-shadow: 0.25px 0px #333; }
+.well a:last-child { color: darkgrey; text-shadow: 0.25px 0px #333; }
+a:last-child:hover { color: rgba(51, 51, 51, 0.8); text-decoration: none; }
 p, footer { text-align: center; font-family: 'Roboto', sans-serif; }
-html, body, .container { height: 100vh; color: #333; }
+body, .container { height: 100%; color: #333; }
+html { height: auto; }
 .photo { margin-left: auto; margin-right: auto; }
-.github-btn { text-align: center; margin-top: 10px; margin-bottom: 10px; }
+.github-btn { text-align: center; margin-top: 10px; margin-bottom: 10px; padding-bottom: 40px; }
 .content-main { margin-top: 40px; padding-left: 20px; padding-right: 20px; }
 .content-main h2 { font-size: 60px; font-family: 'Merienda', cursive; padding-bottom: 16px; }
 .content-main p { font-size: 25px; text-align: justify; margin-top: 30px; margin-right: 6px; margin-left: 6px;}
-.top-main-div { margin-top: 75px; }
-.border-style { border-bottom: 3px outset #ccc; margin-left: 17px; margin-right: 17px; }
+.top-main-div { margin-top: 35px; }
+.border-style { border-bottom: 3px outset #ccc; margin-left: 28px; margin-right: 28px; }
 .logo img { border: 1px solid #333; padding: 4px; }
 .content-secondary { text-align: center; height: auto; }
 .content-secondary p { padding-bottom: 10px; padding-top: 10px; font-size: 20px; text-align: justify; padding-bottom: 50px; margin-left: 6px; margin-right: 6px; }
@@ -15,4 +21,5 @@ html, body, .container { height: 100vh; color: #333; }
 .bottom-div { padding-top: 20px; padding-bottom: 0px; margin-top: 20px; }
 .github-div h2 { margin-top: 2px; font-size: 35px; } 
 a.btn { margin-top: 10px; }
+a.btn:hover { color: #fff; }
 a.btn i span.github-font { font-size: 35px; font-family: 'Fredoka One', cursive; }
