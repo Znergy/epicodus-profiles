@@ -15,31 +15,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Merienda|Roboto" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/individual.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="container">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h2>Questionnaire</h2>
+      <div class="row top-main-div">
+        <div class="col-md-6 logo">
+          <img src="img/grey-person.png" alt="person" class="img-responsive center-image">
         </div>
-        <div class="panel-body">
-          <form class="loginForm">
-            <div class="input-group">
-              <label>What is your business name?</label>
-              <input class="form-control" id="businessName" placeholder="Bob's Burgers" type="text" />
-            </div>
-            <div class="input-group">
-              <label>What makes you different?</label>
-              <input class="form-control" id="mainHeader" placeholder="We make the complex simple." type="text" />
-            </div>
-            <div class="buttonStyles">
-              <button class="btn btn-primary" type="button" id="submitBtn">
-                  <span class="glyphicon glyphicon-list-alt iconStyle"></span>Log In
-              </button>
-            </div>
-          </form>
+        <div class="col-md-6 content-main">
+          <div class="border-style">
+            <h2>Ryan Jones</h2>
+          </div>
+          <p>Something interesting.. I like to bow hunt fish in western Oregon.</p>
+        </div>
+      </div>
+      <div class="row bottom-div">
+        <div class="col-md-6 content-secondary">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor fringilla ipsum, in laoreet ex fringilla eu. Phasellus in est eu arcu ullamcorper luctus. Donec non elit in purus laoreet condimentum ac ut erat. Sed non lacus libero. Morbi luctus lacinia tellus, vitae ultricies odio condimentum quis.</p>
+        </div>
+        <div class="col-md-6 github-div">
+          <div class="github-btn">
+            <h2>Check out my work</h2>
+            <a class="btn btn-default" href="https://github.com/Znergy" target="_blank">
+              <i class="fa fa-github fa-3x" aria-hidden="true" title="GitHub"><span class="github-font"> GitHub</span></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
