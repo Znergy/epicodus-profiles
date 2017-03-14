@@ -30,7 +30,7 @@ For support or to simply reach out, you can contact me at ryanjonesirl@gmail.com
 
 ## Contributing
 
-Pull requests and stars are always welcome. For bugs and feature requests, please create an [issue].
+Pull requests and stars are always welcome. For bugs and feature requests, please contact me at ryanjonesirl@gmail.com.
 
 ### License
 
