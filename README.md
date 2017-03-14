@@ -9,6 +9,10 @@
 
 A web application for students from all tracks to connect and learn about one another. On my first day of class I was surrounded by thirty-five strangers. I didn't know anyone's name or background and it took multiple weeks to build enough rapport to learn how amazing my fellow class mates are. At the end of the day, Epicodus profiles is intended to break down a layer of anxiety and help us all get to know each other much faster.
 
+## How to get a profile made
+
+In the coming days I will give out a link to a form I made with google apps scripts. This form will take your information and a profile picture to construct your Epicodus Profile page. Once the form is submitted, you will receive an email which will include your log in and password information. Using those credentials you will be able to login and view all the students at Epicodus that have also completed the form.
+
 ## Support and contact details
 
 For support or to simply reach out, you can contact me at ryanjonesirl@gmail.com.
