@@ -1,68 +1,49 @@
 $(function() {
   if(window.location.href.includes("java")) {
     $("#courseTitle").text("JAVA");
-//    setBlankImages();
-//    setNames("blank");
-    createProfiles();
-    
-    // when a photo-block is clicked 
+    createProfiles("java");
     $(".photo-block").on('click', function() {
       var profileValue = $(this).attr("id");
       console.log(profileValue);
       document.location.href = "individual.html?pageid=java&profile=" + profileValue, true;
   });
-//    setImages("java"); // how to set all images
   } else if (window.location.href.includes("ruby")) {
     $("#courseTitle").text("RUBY");
-    setBlankImages();
-    setNames("blank");
-    
+    createProfiles("ruby");
     $(".photo-block").on('click', function() {
       var profileValue = $(this).attr("id");
       console.log(profileValue);
       document.location.href = "individual.html?pageid=ruby&profile=" + profileValue, true;
     });
-    //    setImages("ruby"); // how to set all images
   } else if (window.location.href.includes("design")) {
     $("#courseTitle").text("DESIGN");
-    setBlankImages();
-    setNames("blank");
-    
+    createProfiles("design");
     $(".photo-block").on('click', function() {
       var profileValue = $(this).attr("id");
       console.log(profileValue);
       document.location.href = "individual.html?pageid=design&profile=" + profileValue, true;
     });
-    //    setImages("design"); // how to set all images
   } else if (window.location.href.includes("csharp")) {
     $("#courseTitle").text("C#/.NET");
-    setBlankImages();
-    setNames("blank");
-    
+   createProfiles("csharp");
     $(".photo-block").on('click', function() {
       var profileValue = $(this).attr("id");
       console.log(profileValue);
       document.location.href = "individual.html?pageid=csharp&profile=" + profileValue, true;
     });
-    //    setImages("csharp"); // how to set all images
   } else if (window.location.href.includes("php")) {
     $("#courseTitle").text("PHP");
-    setBlankImages();
-    setNames("blank");
-    
+    createProfiles("php");
     $(".photo-block").on('click', function() {
       var profileValue = $(this).attr("id");
-      console.log(profileValue);
       document.location.href = "individual.html?pageid=php&profile=" + profileValue, true;
     });
-    //    setImages("php"); // how to set all images
   } else {
     $("#courseTitle").text("ERROR: PAGE NOT FOUND");
   }
 });
 
 // global name arrays
-var javaNameArray = ["Java Man", "Tyler Jones", "Sarah Smith", "Chase Wellington"];
 var designNameArray = ["Design Man", "Tyler Jones", "Sarah Smith", "Chase Wellington"];
 var csharpNameArray = ["C# Man", "Tyler Jones", "Sarah Smith", "Chase Wellington"];
 var rubyNameArray = ["Ruby Man", "Tyler Jones", "Sarah Smith", "Chase Wellington"];
@@ -71,61 +52,58 @@ var blankNameArray = ["Jerry Lewis", "Bob Hope", "Test", "Cassy Smith"];
 
 
 
-var nameArray = ["Ryan Jones", "Josh Linton", "Chance Magno", "Oliver Fu", "Clifford Grimmell"];
+var javaNameArray = ["Ryan Jones", "Josh Linton", "Chance Magno", "Oliver Fu", "Clifford Grimmell"];
 
 // use the name array length to generate the amount of img/h3s
 
-function createProfiles() {
-  console.log("working");
-  console.log("Array: " + nameArray);
-  for (i=0; i < nameArray.length; i++) {
+function createProfiles(course) {
+  for (i=0; i < javaNameArray.length; i++) {
     var profileCount = i + 1;
-    var name = nameArray[i];
+    var name = javaNameArray[i];
     console.log("Name: " + name);
-    if(i < 4) {
+    if(i >= 0 && i < 4) {
       $('#row1').append('<div class="col-md-3 photo-block well" id="profile' + profileCount + '">' +
-            '<img id="student' + profileCount + '" src="img/java-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
+            '<img id="student' + profileCount + '" src="img/' + course + '-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
             '<h4>' + name + '</h4>' +
             '</div>');
-      console.log("First row.");
-    } else if(i < 8 && i >= 4) {
+    } else if(i >= 4 && i < 8) {
       $('#row2').append('<div class="col-md-3 photo-block well" id="profile' + profileCount + '">' +
-            '<img id="student' + profileCount + '" src="img/java-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
+            '<img id="student' + profileCount + '" src="img/' + course + '-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
             '<h4>' + name + '</h4>' +
             '</div>');
-    } else if (i < 12) {
+    } else if (i >= 8 && i < 12) {
       $('#row3').append('<div class="col-md-3 photo-block well" id="profile' + profileCount + '">' +
-            '<img id="student' + profileCount + '" src="img/java-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
+            '<img id="student' + profileCount + '" src="img/' + course + '-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
             '<h4>' + name + '</h4>' +
             '</div>');
-    } else if (i < 16) {
+    } else if (i >= 12 && i < 16) {
       $('#row4').append('<div class="col-md-3 photo-block well" id="profile' + profileCount + '">' +
-            '<img id="student' + profileCount + '" src="img/java-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
+            '<img id="student' + profileCount + '" src="img/' + course + '-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
             '<h4>' + name + '</h4>' +
             '</div>');
-    } else if (i < 20) {
+    } else if (i >= 16 && i < 20) {
       $('#row5').append('<div class="col-md-3 photo-block well" id="profile' + profileCount + '">' +
-            '<img id="student' + profileCount + '" src="img/java-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
+            '<img id="student' + profileCount + '" src="img/' + course + '-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
             '<h4>' + name + '</h4>' +
             '</div>');
-    } else if (i < 24) {
+    } else if (i >= 20 && i < 24) {
       $('#row6').append('<div class="col-md-3 photo-block well" id="profile' + profileCount + '">' +
-            '<img id="student' + profileCount + '" src="img/java-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
+            '<img id="student' + profileCount + '" src="img/' + course + '-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
             '<h4>' + name + '</h4>' +
             '</div>');
-    } else if (i < 28) {
+    } else if (i >= 24 && i < 28) {
       $('#row7').append('<div class="col-md-3 photo-block well" id="profile' + profileCount + '">' +
-            '<img id="student' + profileCount + '" src="img/java-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
+            '<img id="student' + profileCount + '" src="img/' + course + '-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
             '<h4>' + name + '</h4>' +
             '</div>');
-    } else if (i < 32) {
+    } else if (i >= 28 && i < 32) {
       $('#row8').append('<div class="col-md-3 photo-block well" id="profile' + profileCount + '">' +
-            '<img id="student' + profileCount + '" src="img/java-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
+            '<img id="student' + profileCount + '" src="img/' + course + '-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
             '<h4>' + name + '</h4>' +
             '</div>');
-    } else if (i < 36) {
+    } else if (i >= 32 && i < 36) {
       $('#row9').append('<div class="col-md-3 photo-block well" id="profile' + profileCount + '">' +
-            '<img id="student' + profileCount + '" src="img/java-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
+            '<img id="student' + profileCount + '" src="img/' + course + '-profile' + profileCount + '.jpeg" class="img-responsive photo" alt="">' +
             '<h4>' + name + '</h4>' +
             '</div>');
     }
@@ -134,30 +112,30 @@ function createProfiles() {
 
 
 
-function setBlankImages() {
-  var photoCount = $(".photo").length;
-    var PersonImg = "";
-    for(i=0;i <= photoCount; i++) {
-      PersonImg = "img/grey-person.png";
-      $("#student" + i).attr({
-        src: PersonImg,
-        alt: 'grey person'
-      });
-    }
-}
-
-
-function setImages(name) {
-  var photoCount = $(".photo").length;
-    var PersonImg = "";
-    for(i=0;i <= photoCount; i++) {
-      PersonImg = "img/" + name + "-profile" + i + ".jpeg";
-      $("#student" + i).attr({
-        src: PersonImg,
-        alt: 'student' + i
-      });
-    }
-}
+//function setBlankImages() {
+//  var photoCount = $(".photo").length;
+//    var PersonImg = "";
+//    for(i=0;i <= photoCount; i++) {
+//      PersonImg = "img/grey-person.png";
+//      $("#student" + i).attr({
+//        src: PersonImg,
+//        alt: 'grey person'
+//      });
+//    }
+//}
+//
+//
+//function setImages(name) {
+//  var photoCount = $(".photo").length;
+//    var PersonImg = "";
+//    for(i=0;i <= photoCount; i++) {
+//      PersonImg = "img/" + name + "-profile" + i + ".jpeg";
+//      $("#student" + i).attr({
+//        src: PersonImg,
+//        alt: 'student' + i
+//      });
+//    }
+//}
 
 
 
