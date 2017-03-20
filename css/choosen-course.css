@@ -1,8 +1,8 @@
 .square { height: 150px; }
 h2, h3, h4, h5, h6, h1 { text-align: center; font-family: 'Roboto', cursive; }
 h1:first-child { font-size: 65px; font-family: 'Roboto', cursive; }
-body, .container { height: 100%; color: #333; }
-html { height: auto; }
+body, .container { height: auto; color: #333; }
+html { height: 100%; }
 .square:hover { background-color: lightgrey; cursor: pointer; }
 .footer { margin-bottom: 0px; padding: 30px;}
 footer:last-child { color: darkgrey; text-shadow: 0.25px 0px #333; }
