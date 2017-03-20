@@ -62,10 +62,10 @@ $(function() {
 });
 
 
-var javaNameArray = ["Ryan Jones", "Josh Linton", "Chance Magno", "Oliver Fu", "Clifford Grimmell", "Dallas"];
-var javaDescriptionArray = ["I build native Android applications using Java, and browser applications using JavaScript. I also have experience with SQL, JQuery, and HTML/CSS.", "I'm an aspiring developer.", "Current student at Epicodus.", "Attending Epicodus. Previous experience in Urban Studies and Planning and Geographic Information Systems.", "I am an aspiring Dev Ops engineer and want to work with AWS.", "Long time hacking hobbyist, currently studying Java/Android. All hail the future of JavaScript. Let's make games!"];
-var javaInterestingArray = ["I'm a die hard Timbers fan.", "Nintendo Switch is the bees knees 🐝.", "Cars, family, and gaming.", "I like sunshine, traveling, dogs and movies.", "My favorite book is Lord of the Rings.", "I'm a beer afficuanado and half-baked wine steward. "];
-var javaGithubArray = ["https://github.com/znergy", "https://github.com/leb0x", "https://github.com/chancemagno", "https://github.com/ofu997", "https://github.com/grimmello", "https://github.com/slaughtr"];
+var javaNameArray = ["Ryan Jones", "Josh Linton", "Chance Magno", "Oliver Fu", "Clifford Grimmell", "Dallas", "Alex the cat"];
+var javaDescriptionArray = ["I build native Android applications using Java, and browser applications using JavaScript. I also have experience with SQL, JQuery, and HTML/CSS.", "I'm an aspiring developer.", "Current student at Epicodus.", "Attending Epicodus. Previous experience in Urban Studies and Planning and Geographic Information Systems.", "I am an aspiring Dev Ops engineer and want to work with AWS.", "Long time hacking hobbyist, currently studying Java/Android. All hail the future of JavaScript. Let's make games!", "I'm a cat!"];
+var javaInterestingArray = ["I'm a die hard Timbers fan.", "Nintendo Switch is the bees knees 🐝.", "Cars, family, and gaming.", "I like sunshine, traveling, dogs and movies.", "My favorite book is Lord of the Rings.", "I'm a beer afficuanado and half-baked wine steward.", "I'm Korean."];
+var javaGithubArray = ["https://github.com/znergy", "https://github.com/leb0x", "https://github.com/chancemagno", "https://github.com/ofu997", "https://github.com/grimmello", "https://github.com/slaughtr", "https://github.com/doomcatlee"];
 
 function setName(name, number) {
   var profileDescription = "";

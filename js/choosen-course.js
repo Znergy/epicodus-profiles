@@ -48,7 +48,7 @@ var designNameArray = [];
 var csharpNameArray = [];
 var rubyNameArray = [];
 var phpNameArray = [];
-var javaNameArray = ["Ryan Jones", "Josh Linton", "Chance Magno", "Oliver Fu", "Clifford Grimmell", "Dallas"];
+var javaNameArray = ["Ryan Jones", "Josh Linton", "Chance Magno", "Oliver Fu", "Clifford Grimmell", "Dallas", "Alex the Cat"];
 
 // use the name array length to generate the amount of img/h3s
 
