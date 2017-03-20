@@ -14,7 +14,6 @@ $(function() {
     
     // name, description, interesting, github code
     var arrayOfUserInfo = setName("java", profileNumber);
-    console.log(arrayOfUserInfo);
     var name = arrayOfUserInfo[0];
     var description = arrayOfUserInfo[1];
     var interesting = arrayOfUserInfo[2];
@@ -109,7 +108,7 @@ function setName(name, number) {
 function getImagePath(courseName) {
   var arrayURL = window.location.href.split('=');
   var profile = arrayURL[2];
-  var profileImagePath =  courseName + "-" + profile + ".jpg";
+  var profileImagePath =  courseName + "-" + profile + ".jpeg";
   var profileNumber = parseInt(profile.charAt(profile.length - 1));
   // return array of image path and id #
   var array = [profileImagePath, profileNumber];
